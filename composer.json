@@ -1,0 +1,42 @@
+{
+    "name": "sylius-labs/polyfill-symfony-framework-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony FrameworkBundle Polyfill",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamil Kokot",
+            "email": "kamil@kokot.me",
+            "homepage": "https://kamilkokot.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "symfony/framework-bundle": "^4.4 || ^5.2"
+    },
+    "conflict": {
+        "symfony/polyfill-mbstring": "1.22.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "4.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SyliusLabs\\Polyfill\\Symfony\\FrameworkBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\SyliusLabs\\Polyfill\\Symfony\\FrameworkBundle\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": [
+            "vendor/bin/psalm"
+        ],
+        "test": [
+            "vendor/bin/phpunit --colors=always"
+        ]
+    }
+}
