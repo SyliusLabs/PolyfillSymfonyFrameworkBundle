@@ -12,14 +12,14 @@
     ],
     "require": {
         "php": "^8.0",
-        "symfony/framework-bundle": "^5.4"
+        "symfony/framework-bundle": "^5.4 || ^6.0"
     },
     "conflict": {
         "symfony/polyfill-mbstring": "1.22.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "4.3.2"
+        "vimeo/psalm": "^4.23"
     },
     "autoload": {
         "psr-4": {
